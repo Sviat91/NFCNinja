@@ -1,0 +1,1 @@
+const flattenArray = arr => arr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten),[]);
