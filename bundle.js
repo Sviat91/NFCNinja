@@ -1,0 +1,1 @@
+const deepClone = obj => { if (typeof obj !== 'object' || obj === null) return obj; const newObj = Array.isArray(obj) ? [] : {}; for (letkey in obj) newObj[key] = deepClone(obj[key]); return newObj; };
